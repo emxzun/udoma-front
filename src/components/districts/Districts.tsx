@@ -2,34 +2,9 @@ import React  from 'react';
 import {Swiper, SwiperSlide} from "swiper/react";
 import {Pagination} from "swiper";
 import District from "@/components/district/District";
-import apartmentExample from "@/images/examples/apartment.jpeg";
+import {DATA} from "@/common/data";
 
 
-
-const DATA = {
-  apartments: [
-    {
-      title: " ЖК «Atlantis Deluxe»",
-      img: apartmentExample.src,
-    },
-    {
-      title: " ЖК «Atlantis Deluxe»",
-      img: apartmentExample.src,
-    },
-    {
-      title: " ЖК «Atlantis Deluxe»",
-      img: apartmentExample.src,
-    },
-    {
-      title: " ЖК «Atlantis Deluxe»",
-      img: apartmentExample.src,
-    },
-    {
-      title: " ЖК «Atlantis Deluxe»",
-      img: apartmentExample.src,
-    },
-  ]
-}
 
 const Districts = () => {
   return (
@@ -57,7 +32,7 @@ const Districts = () => {
               }
             }}
         >
-          {DATA.apartments.map(item =>
+          {DATA.districts.map(item =>
               <SwiperSlide key={item.title}>
                 <District item={item}/>
               </SwiperSlide>

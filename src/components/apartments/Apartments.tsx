@@ -1,57 +1,10 @@
 import Apartment from "@/components/apartment/Apartment";
-import apartmentExample from "@/images/examples/apartment.jpeg";
+import {DATA} from "@/common/data";
 import {Swiper, SwiperSlide} from "swiper/react";
 import {Pagination} from "swiper";
 
+
 const Apartments = () => {
-  const DATA = {
-    apartments: [
-      {
-        title: " ЖК «Atlantis Deluxe»",
-        district: "Аламедин",
-        img: apartmentExample,
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque culpa, dignissimos, distinctio eaque enim error esse facere hic illum inventore magni nihil officiis quae quaerat quisquam recusandae totam ut.",
-        price: 123
-      },
-      {
-        title: " ЖК «Atlantis Deluxe»",
-        district: "Аламедин",
-        img: apartmentExample,
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque culpa, dignissimos, distinctio eaque enim error esse facere hic illum inventore magni nihil officiis quae quaerat quisquam recusandae totam ut.",
-        price: 123
-      },
-      {
-        title: " ЖК «Atlantis Deluxe»",
-        district: "Аламедин",
-        img: apartmentExample,
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque culpa, dignissimos, distinctio eaque enim error esse facere hic illum inventore magni nihil officiis quae quaerat quisquam recusandae totam ut.",
-        price: 123
-      },
-      {
-        title: " ЖК «Atlantis Deluxe»",
-        district: "Аламедин",
-        img: apartmentExample,
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque culpa, dignissimos, distinctio eaque enim error esse facere hic illum inventore magni nihil officiis quae quaerat quisquam recusandae totam ut.",
-        price: 123
-      },
-      {
-        title: " ЖК «Atlantis Deluxe»",
-        district: "Аламедин",
-        img: apartmentExample,
-        desc: "Lo quisquam recusandae totam ut.",
-        price: 123
-      },
-      {
-        title: " ЖК «Atlantis Deluxe»",
-        district: "Аламедин",
-        img: apartmentExample,
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque culpa, dignissimos, distinctio eaque enim error esse facere hic illum inventore magni nihil officiis quae quaerat quisquam recusandae totam ut.",
-        price: 123
-      },
-
-    ]
-  }
-
   return (
       <div className="apartments">
         <div className="apartments__header">

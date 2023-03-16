@@ -1,10 +1,9 @@
 import Head from 'next/head'
-import 'swiper/css';
-import 'swiper/css/pagination';
 import Apartments from "@/components/apartments/Apartments";
 import Districts from "@/components/districts/Districts";
 import Intro from "@/components/intro/Intro";
-
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 export default function Home() {
   return (
