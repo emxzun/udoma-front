@@ -1,0 +1,275 @@
+@import "@/font/stylesheet.css";
+
+:root {
+  font-family: 'TT Norms';
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#block{
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: auto;
+}
+#block-title{
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 50px;
+  color: #232323;
+}
+#block-subtitle{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #232323;
+}
+
+
+.apartments{
+  @extend #block;
+  //background: #F8F8F8;
+  &__header{
+    margin-bottom: 45px;
+    &-title{
+      @extend #block-title
+    }
+    &-subtitle{
+      @extend #block-subtitle;
+    }
+  }
+  &__items{
+    gap: 15px;
+  }
+  &__item{
+    margin-bottom: 30px;
+    max-width: 500px;
+    background: #FFFFFF;
+    border: 1px solid #E3E3E3;
+    border-radius: 8px;
+    &-img{
+      width: 100%;
+      height: 150px;
+      border-radius: 8px 8px 0 0;
+    }
+    &-content{
+      padding: 15px;
+      display: grid;
+      grid-template-rows: min-content min-content 1fr min-content;
+      height: 180px;
+    }
+    &-title{
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+    }
+    &-district{
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 16px;
+      margin: 2px 0 5px;
+      color: #007BFF;
+    }
+    &-desc{
+      font-size: 12px;
+      line-height: 16px;
+      margin-bottom: 15px;
+      height: 100%;
+    }
+    &-price{
+      color: #007BFF;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 21px;
+
+    }
+  }
+  &__food{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+.districts{
+  @extend #block;
+  &__header{
+    margin-bottom: 45px;
+  }
+  &__title{
+    @extend #block-title;
+  }
+  &__subtitle{
+    @extend #block-subtitle;
+  }
+  &__items{
+    margin-bottom: 20px;
+    .district{
+      margin-bottom: 30px;
+      width: 100%;
+      height: 220px;
+      border-radius: 2px;
+
+      display: flex;
+      align-items: flex-end;
+      &__title{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        color: white;
+        padding: 10px 20px;
+      }
+    }
+  }
+}
+
+button{
+  padding: 15px 30px;
+  border-radius: 60px;
+  border: none;
+  background: #007BFF;
+  color: #FFFFFF;
+  &:hover{
+    background: #3191ff;
+  }
+  &:active{
+    background: #0264d5;
+  }
+}
+
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto;
+
+  @extend #block;
+  &__wrapper{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  &__networks{
+    &-title{
+      margin-bottom: 10px;
+    }
+    &-items{
+      display: flex;
+      gap: 10px;
+    }
+  }
+  &__phone{
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+    &__number{
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+    }
+    &__button{
+      display: inline-block;
+      border: 1px solid #419FFF;
+      padding: 15px 20px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      color: #232323;
+      text-decoration: none;
+    }
+  }
+}
+
+.intro{
+  @extend #block;
+  height: 100vh;
+  max-height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+
+  &__title{
+    @extend #block-title;
+    margin-bottom: 20px;
+  }
+  &__subtitle{
+    @extend #block-subtitle;
+    color: #767676;
+    margin-bottom: 30px;
+  }
+  &__district-items{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  &__district-item{
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: 500;
+    &.active{
+      background: #007BFF;
+      color: white;
+    }
+  }
+  &__search-field{
+    width: 65%;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.10);
+    padding: 5px 20px;
+    padding-right: 5px;
+    border-radius: 50px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+
+
+    @media screen and (max-width: 768px) {
+      width: 70%;
+    }
+    @media screen and (max-width: 768px) {
+      width: 80%;
+    }
+    @media screen and (max-width: 540px) {
+      width: 90%;
+    }
+    input{
+      width: 100%;
+      outline: none;
+      font-size: 18px;
+      border: none;
+    }
+    button{
+      padding: 10px 40px;
+    }
+  }
+}
+
+
+.header{
+  @extend  #block;
+  padding: 10px 20px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__wrapper{
+    position: fixed;
+    width: 100%;
+    z-index: 100000000;
+    background-color: white;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.10);
+
+  }
+  &__logo{
+    img{
+      width: auto;
+      height: 35px;
+    }
+  }
+}
+
+.swiper-pagination{
+  position: relative;
+}
