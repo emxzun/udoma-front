@@ -145,7 +145,6 @@ button{
 .footer{
   display: flex;
   justify-content: space-between;
-  margin: 30px auto;
 
   @extend #block;
   &__wrapper{
