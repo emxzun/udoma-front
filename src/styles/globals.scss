@@ -99,6 +99,28 @@ button{
   border: none;
   background: #007BFF;
   color: #FFFFFF;
+  &.small{
+    padding: 10px 15px;
+    &.loader{
+      padding: 10px 20px;
+    }
+  }
+  &.loader{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    line-height: 1.5rem;
+    transition: all .2s ease-in-out;
+    .loader{
+      display: block;
+      width: 1.5em;
+      height: 1.5em;
+      border: 3px dashed;
+      border-radius: 100%;
+      animation: loading 1.5s ease-in-out infinite;
+    }
+
+  }
   &:hover{
     background: #3191ff;
   }
@@ -110,7 +132,10 @@ button{
   position: relative;
 }
 
-
+@keyframes loading {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
 
 
 .layout{
@@ -209,6 +234,9 @@ button{
     margin-bottom: 20px;
   }
 }
+.sabheader{
+  height: 54px;
+}
 
 .intro{
   @extend #block;
@@ -287,5 +315,96 @@ button{
     button{
       padding: 10px 40px;
     }
+  }
+}
+
+//
+//
+//510: {
+//     slidesPerView: 2,
+//   },
+//768: {
+//     slidesPerView: 3,
+//   },
+//992: {
+//     slidesPerView: 4,
+//   }
+
+
+.apartment-list{
+  &__head{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    @media screen and (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;;
+    }
+  }
+  &__main{}
+  &__food{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__filter-price{
+    display: flex;
+    gap: 10px;
+    &-item{
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+  }
+  &__items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    @media screen and (max-width: 992px){
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    @media screen and (max-width: 768px){
+      grid-template-columns: 1fr 1fr;
+    }
+    @media screen and (max-width: 510px){
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+
+
+
+#input-default{
+  border: none;
+  outline: none;
+}
+
+.filter{
+  font-size: 12px;
+  &.district{
+    width: 200px;
+  }
+  display: flex;
+  align-items: flex-end;
+  border-radius: 10px;
+  border: 1px solid #007BFF;
+  padding: 5px 10px;
+  label{
+    color: #767676;
+    font-size: .8em;
+    margin-right: 5px;
+  }
+  input{
+    width: 100%;
+    font-size: 1em;
+    @extend #input-default;
+  }
+  &.price{
+    width: 100px;
   }
 }

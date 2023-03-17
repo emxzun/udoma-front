@@ -12,7 +12,7 @@ export const DATA = {
       district: "Аламедин",
       img: apartmentExample,
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque culpa, dignissimos, distinctio eaque enim error esse facere hic illum inventore magni nihil officiis quae quaerat quisquam recusandae totam ut.",
-      price: 123
+      price: 0
   },
   apartments: [
     {
@@ -20,44 +20,198 @@ export const DATA = {
       district: "Аламедин",
       img: apartmentExample,
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque culpa, dignissimos, distinctio eaque enim error esse facere hic illum inventore magni nihil officiis quae quaerat quisquam recusandae totam ut.",
-      price: 123
+      price: 0
     },
     {
       title: " ЖК «Atlantis Deluxe»",
       district: "Аламедин",
       img: apartmentExample,
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque culpa, dignissimos, distinctio eaque enim error esse facere hic illum inventore magni nihil officiis quae quaerat quisquam recusandae totam ut.",
-      price: 123
+      price: 0
     },
     {
       title: " ЖК «Atlantis Deluxe»",
       district: "Аламедин",
       img: apartmentExample,
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque culpa, dignissimos, distinctio eaque enim error esse facere hic illum inventore magni nihil officiis quae quaerat quisquam recusandae totam ut.",
-      price: 123
+      price: 0
     },
     {
       title: " ЖК «Atlantis Deluxe»",
       district: "Аламедин",
       img: apartmentExample,
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque culpa, dignissimos, distinctio eaque enim error esse facere hic illum inventore magni nihil officiis quae quaerat quisquam recusandae totam ut.",
-      price: 123
+      price: 0
+    },
+    {
+      title: " ЖК «Atlantis Deluxe»",
+      district: "Аламедин",
+      img: apartmentExample,
+      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque culpa, dignissimos, distinctio eaque enim error esse facere hic illum inventore magni nihil officiis quae quaerat quisquam recusandae totam ut.",
+      price: 0
+    },
+    {
+      title: " ЖК «Atlantis Deluxe»",
+      district: "Аламедин",
+      img: apartmentExample,
+      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque culpa, dignissimos, distinctio eaque enim error esse facere hic illum inventore magni nihil officiis quae quaerat quisquam recusandae totam ut.",
+      price: 0
+    },
+    {
+      title: " ЖК «Atlantis Deluxe»",
+      district: "Аламедин",
+      img: apartmentExample,
+      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque culpa, dignissimos, distinctio eaque enim error esse facere hic illum inventore magni nihil officiis quae quaerat quisquam recusandae totam ut.",
+      price: 0
+    },
+    {
+      title: " ЖК «Atlantis Deluxe»",
+      district: "Аламедин",
+      img: apartmentExample,
+      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque culpa, dignissimos, distinctio eaque enim error esse facere hic illum inventore magni nihil officiis quae quaerat quisquam recusandae totam ut.",
+      price: 0
+    },
+    {
+      title: " ЖК «Atlantis Deluxe»",
+      district: "Аламедин",
+      img: apartmentExample,
+      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque culpa, dignissimos, distinctio eaque enim error esse facere hic illum inventore magni nihil officiis quae quaerat quisquam recusandae totam ut.",
+      price: 0
+    },
+    {
+      title: " ЖК «Atlantis Deluxe»",
+      district: "Аламедин",
+      img: apartmentExample,
+      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque culpa, dignissimos, distinctio eaque enim error esse facere hic illum inventore magni nihil officiis quae quaerat quisquam recusandae totam ut.",
+      price: 0
+    },    {
+      title: " ЖК «Atlantis Deluxe»",
+      district: "Аламедин",
+      img: apartmentExample,
+      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque culpa, dignissimos, distinctio eaque enim error esse facere hic illum inventore magni nihil officiis quae quaerat quisquam recusandae totam ut.",
+      price: 0
+    },
+    {
+      title: " ЖК «Atlantis Deluxe»",
+      district: "Аламедин",
+      img: apartmentExample,
+      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque culpa, dignissimos, distinctio eaque enim error esse facere hic illum inventore magni nihil officiis quae quaerat quisquam recusandae totam ut.",
+      price: 0
+    },    {
+      title: " ЖК «Atlantis Deluxe»",
+      district: "Аламедин",
+      img: apartmentExample,
+      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque culpa, dignissimos, distinctio eaque enim error esse facere hic illum inventore magni nihil officiis quae quaerat quisquam recusandae totam ut.",
+      price: 0
+    },
+    {
+      title: " ЖК «Atlantis Deluxe»",
+      district: "Аламедин",
+      img: apartmentExample,
+      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque culpa, dignissimos, distinctio eaque enim error esse facere hic illum inventore magni nihil officiis quae quaerat quisquam recusandae totam ut.",
+      price: 0
+    },
+    {
+      title: " ЖК «Atlantis Deluxe»",
+      district: "Аламедин",
+      img: apartmentExample,
+      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque culpa, dignissimos, distinctio eaque enim error esse facere hic illum inventore magni nihil officiis quae quaerat quisquam recusandae totam ut.",
+      price: 0
+    },
+    {
+      title: " ЖК «Atlantis Deluxe»",
+      district: "Аламедин",
+      img: apartmentExample,
+      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque culpa, dignissimos, distinctio eaque enim error esse facere hic illum inventore magni nihil officiis quae quaerat quisquam recusandae totam ut.",
+      price: 0
+    },
+    {
+      title: " ЖК «Atlantis Deluxe»",
+      district: "Аламедин",
+      img: apartmentExample,
+      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque culpa, dignissimos, distinctio eaque enim error esse facere hic illum inventore magni nihil officiis quae quaerat quisquam recusandae totam ut.",
+      price: 0
+    },
+    {
+      title: " ЖК «Atlantis Deluxe»",
+      district: "Аламедин",
+      img: apartmentExample,
+      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque culpa, dignissimos, distinctio eaque enim error esse facere hic illum inventore magni nihil officiis quae quaerat quisquam recusandae totam ut.",
+      price: 0
+    },
+    {
+      title: " ЖК «Atlantis Deluxe»",
+      district: "Аламедин",
+      img: apartmentExample,
+      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque culpa, dignissimos, distinctio eaque enim error esse facere hic illum inventore magni nihil officiis quae quaerat quisquam recusandae totam ut.",
+      price: 0
     },
     {
       title: " ЖК «Atlantis Deluxe»",
       district: "Аламедин",
       img: apartmentExample,
       desc: "Lo quisquam recusandae totam ut.",
-      price: 123
+      price: 0
     },
     {
       title: " ЖК «Atlantis Deluxe»",
       district: "Аламедин",
       img: apartmentExample,
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque culpa, dignissimos, distinctio eaque enim error esse facere hic illum inventore magni nihil officiis quae quaerat quisquam recusandae totam ut.",
-      price: 123
+      price: 0
     },
-
+    {
+      title: " ЖК «Atlantis Deluxe»",
+      district: "Аламедин",
+      img: apartmentExample,
+      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque culpa, dignissimos, distinctio eaque enim error esse facere hic illum inventore magni nihil officiis quae quaerat quisquam recusandae totam ut.",
+      price: 0
+    },
+    {
+      title: " ЖК «Atlantis Deluxe»",
+      district: "Аламедин",
+      img: apartmentExample,
+      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque culpa, dignissimos, distinctio eaque enim error esse facere hic illum inventore magni nihil officiis quae quaerat quisquam recusandae totam ut.",
+      price: 0
+    },
+    {
+      title: " ЖК «Atlantis Deluxe»",
+      district: "Аламедин",
+      img: apartmentExample,
+      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque culpa, dignissimos, distinctio eaque enim error esse facere hic illum inventore magni nihil officiis quae quaerat quisquam recusandae totam ut.",
+      price: 0
+    },    {
+      title: " ЖК «Atlantis Deluxe»",
+      district: "Аламедин",
+      img: apartmentExample,
+      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque culpa, dignissimos, distinctio eaque enim error esse facere hic illum inventore magni nihil officiis quae quaerat quisquam recusandae totam ut.",
+      price: 0
+    },    {
+      title: " ЖК «Atlantis Deluxe»",
+      district: "Аламедин",
+      img: apartmentExample,
+      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque culpa, dignissimos, distinctio eaque enim error esse facere hic illum inventore magni nihil officiis quae quaerat quisquam recusandae totam ut.",
+      price: 0
+    },    {
+      title: " ЖК «Atlantis Deluxe»",
+      district: "Аламедин",
+      img: apartmentExample,
+      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque culpa, dignissimos, distinctio eaque enim error esse facere hic illum inventore magni nihil officiis quae quaerat quisquam recusandae totam ut.",
+      price: 0
+    },    {
+      title: " ЖК «Atlantis Deluxe»",
+      district: "Аламедин",
+      img: apartmentExample,
+      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque culpa, dignissimos, distinctio eaque enim error esse facere hic illum inventore magni nihil officiis quae quaerat quisquam recusandae totam ut.",
+      price: 0
+    },
+    {
+      title: " ЖК «Atlantis Deluxe»",
+      district: "Аламедин",
+      img: apartmentExample,
+      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque culpa, dignissimos, distinctio eaque enim error esse facere hic illum inventore magni nihil officiis quae quaerat quisquam recusandae totam ut.",
+      price: 0
+    },
   ],
   districts: [
     {
