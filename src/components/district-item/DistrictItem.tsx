@@ -1,9 +1,9 @@
 import React, {FC} from 'react';
 import {StaticImageData} from "next/image";
-import DistrictProps from "@/components/district/district.props";
+import DistrictItemProps from "@/components/district-item/district-item.props";
 
 
-const District: FC<DistrictProps> =({item}) => {
+const DistrictItem: FC<DistrictItemProps> =({item}) => {
   const styles = {
     // backgroundImage: `url(${item.img})`,
     background: `
@@ -16,12 +16,12 @@ const District: FC<DistrictProps> =({item}) => {
     backgroundPposition: "center",
   }
   return (
-      <div className="district" style={styles}>
-        <div className="district__title">
+      <div className="district-item" style={styles}>
+        <div className="district-item__title">
           {item.title}
         </div>
       </div>
   );
 };
 
-export default District;
+export default DistrictItem;

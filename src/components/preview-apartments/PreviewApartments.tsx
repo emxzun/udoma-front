@@ -1,17 +1,13 @@
-import Apartment from "@/components/apartment/Apartment";
+import ApartmentItem from "@/components/apartment-item/ApartmentItem";
 import {DATA} from "@/common/data";
 import {Swiper, SwiperSlide} from "swiper/react";
 import {Pagination} from "swiper";
 
 
-const Apartments = () => {
+const PreviewApartments = () => {
   return (
-      <div className="apartments">
-        <div className="apartments__header">
-          <h2 className="apartments__header-title">Наши лучшие инвестиционные предложения</h2>
-          <h3 className="apartments__header-subtitle">Мы отобрали, проверили и рассчитали прибыльность каждого объекта</h3>
-        </div>
-        <div className="apartments__items">
+      <>
+        <div className="preview-apartments__items">
           <Swiper
               modules={[Pagination]}
               slidesPerView={1}
@@ -33,17 +29,17 @@ const Apartments = () => {
           >
             {DATA.apartments.map(item =>
                 <SwiperSlide key={item.title}>
-                  <Apartment item={item}/>
+                  <ApartmentItem item={item}/>
                 </SwiperSlide>
             )}
           </Swiper>
         </div>
-        <div className="apartments__food">
+        <div className="preview-apartments__food">
           <button>Смотреть все объекты</button>
         </div>
-      </div>
+    </>
 
   );
 };
 
-export default Apartments;
+export default PreviewApartments;

@@ -1,7 +1,7 @@
 import {StaticImageData} from "next/image";
 
 
-export default interface DistrictProps{
+export default interface DistrictItemProps {
   item: {
     img: StaticImageData | string;
     title: string;

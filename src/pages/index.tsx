@@ -1,9 +1,11 @@
 import Head from 'next/head'
-import Apartments from "@/components/apartments/Apartments";
-import Districts from "@/components/districts/Districts";
+import PreviewApartments from "@/components/preview-apartments/PreviewApartments";
+import PreviewDistricts from "@/components/preview-districts/PreviewDistricts";
 import Intro from "@/components/intro/Intro";
 import 'swiper/css';
 import 'swiper/css/pagination';
+import LayoutBlock from "@/layouts/layout-block/LayoutBlock";
+
 
 export default function Home() {
   return (
@@ -16,8 +18,12 @@ export default function Home() {
       </Head>
       <main>
         <Intro/>
-        <Apartments/>
-        <Districts/>
+        <LayoutBlock title="Наши лучшие инвестиционные предложения" subtitle="Мы отобрали, проверили и рассчитали прибыльность каждого объекта">
+          <PreviewApartments/>
+        </LayoutBlock>
+        <LayoutBlock title="Новости и аналитика рынка недвижимости" subtitle="Последние новости и аналитический отчеты, а также полезные советы наших экспетров">
+          <PreviewDistricts/>
+        </LayoutBlock>
       </main>
     </>
   )

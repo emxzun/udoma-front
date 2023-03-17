@@ -1,7 +1,7 @@
 import {StaticImageData} from "next/image";
 
 
-export default interface ApartmentProps{
+export default interface ApartmentItemProps {
   item: {
     title: string;
     img: StaticImageData;

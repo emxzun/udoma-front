@@ -1,5 +1,5 @@
 import React from 'react';
-import Apartment from "@/components/apartment/Apartment";
+import ApartmentItem from "@/components/apartment-item/ApartmentItem";
 import {DATA} from "@/common/data";
 
 import {Swiper, SwiperSlide} from "swiper/react";
@@ -34,7 +34,6 @@ const Intro = () => {
               </div>
             </div>
             <div className="last-apartment">
-              <div className="apartments__items">
                 <Swiper
                     modules={[Pagination]}
                     slidesPerView={1}
@@ -45,11 +44,10 @@ const Intro = () => {
                 >
                   {DATA.apartments.map(item =>
                       <SwiperSlide key={item.title}>
-                        <Apartment item={item}/>
+                        <ApartmentItem item={item}/>
                       </SwiperSlide>
                   )}
                 </Swiper>
-              </div>
             </div>
           </div>
         </div>

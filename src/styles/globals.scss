@@ -1,4 +1,4 @@
-@import "@/font/stylesheet.css";
+@import "@/fonts/stylesheet.css";
 
 :root {
   font-family: 'TT Norms';
@@ -25,120 +25,6 @@
   font-size: 18px;
   line-height: 21px;
   color: #232323;
-}
-
-
-.apartments{
-  @extend #block;
-  //background: #F8F8F8;
-  &__header{
-    margin-bottom: 45px;
-    &-title{
-      @extend #block-title
-    }
-    &-subtitle{
-      @extend #block-subtitle;
-    }
-  }
-  &__items{
-    gap: 15px;
-  }
-  &__item{
-    margin-bottom: 30px;
-    max-width: 500px;
-    background: #FFFFFF;
-    border: 1px solid #E3E3E3;
-    border-radius: 8px;
-    &-img{
-      width: 100%;
-      height: 150px;
-      border-radius: 8px 8px 0 0;
-    }
-    &-content{
-      padding: 15px;
-      display: grid;
-      grid-template-rows: min-content min-content 1fr min-content;
-      height: 180px;
-    }
-    &-title{
-      font-weight: 600;
-      font-size: 16px;
-      line-height: 19px;
-    }
-    &-district{
-      font-size: 12px;
-      font-weight: 500;
-      line-height: 16px;
-      margin: 2px 0 5px;
-      color: #007BFF;
-    }
-    &-desc{
-      font-size: 12px;
-      line-height: 16px;
-      margin-bottom: 15px;
-      height: 100%;
-    }
-    &-price{
-      color: #007BFF;
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 21px;
-
-    }
-  }
-  &__food{
-    margin-top: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-
-.districts{
-  @extend #block;
-  &__header{
-    margin-bottom: 45px;
-  }
-  &__title{
-    @extend #block-title;
-  }
-  &__subtitle{
-    @extend #block-subtitle;
-  }
-  &__items{
-    margin-bottom: 20px;
-    .district{
-      margin-bottom: 30px;
-      width: 100%;
-      height: 220px;
-      border-radius: 2px;
-
-      display: flex;
-      align-items: flex-end;
-      &__title{
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 21px;
-        color: white;
-        padding: 10px 20px;
-      }
-    }
-  }
-}
-
-button{
-  padding: 15px 30px;
-  border-radius: 60px;
-  border: none;
-  background: #007BFF;
-  color: #FFFFFF;
-  &:hover{
-    background: #3191ff;
-  }
-  &:active{
-    background: #0264d5;
-  }
 }
 
 
@@ -180,6 +66,147 @@ button{
       color: #232323;
       text-decoration: none;
     }
+  }
+}
+.header{
+  @extend  #block;
+  padding: 10px 20px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__wrapper{
+    position: fixed;
+    width: 100%;
+    z-index: 100000000;
+    background-color: white;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.10);
+
+  }
+  &__logo{
+    img{
+      width: auto;
+      height: 35px;
+    }
+  }
+  &__phone{
+    color: #0264d5;
+    font-weight: 700;
+  }
+}
+button{
+  padding: 15px 30px;
+  border-radius: 60px;
+  border: none;
+  background: #007BFF;
+  color: #FFFFFF;
+  &:hover{
+    background: #3191ff;
+  }
+  &:active{
+    background: #0264d5;
+  }
+}
+.swiper-pagination{
+  position: relative;
+}
+
+
+
+
+.layout{
+  &-block{
+    @extend #block;
+    &__header{
+      margin-bottom: 30px;
+    }
+    &__title{
+      @extend #block-title;
+    }
+    &__subtitle{
+      @extend #block-subtitle;
+    }
+  }
+}
+
+
+.apartment-item{
+  margin-bottom: 30px;
+  max-width: 500px;
+  background: #FFFFFF;
+  border: 1px solid #E3E3E3;
+  border-radius: 8px;
+  &__img{
+    width: 100%;
+    height: 150px;
+    border-radius: 8px 8px 0 0;
+  }
+  &__content{
+    padding: 15px;
+    display: grid;
+    grid-template-rows: min-content min-content 1fr min-content;
+    height: 180px;
+  }
+  &__title{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  &__district{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    margin: 2px 0 5px;
+    color: #007BFF;
+  }
+  &__desc{
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 15px;
+    height: 100%;
+  }
+  &__price{
+    color: #007BFF;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+
+  }
+}
+
+.preview-apartments{
+  &__items{
+    gap: 15px;
+  }
+  &__food{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+.district-item{
+  margin-bottom: 30px;
+  width: 100%;
+  height: 220px;
+  border-radius: 2px;
+
+  display: flex;
+  align-items: flex-end;
+  &__title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: white;
+    padding: 10px 20px;
+  }
+}
+
+
+.preview-districts{
+  &__items{
+    margin-bottom: 20px;
   }
 }
 
@@ -261,35 +288,4 @@ button{
       padding: 10px 40px;
     }
   }
-}
-
-
-.header{
-  @extend  #block;
-  padding: 10px 20px 5px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  &__wrapper{
-    position: fixed;
-    width: 100%;
-    z-index: 100000000;
-    background-color: white;
-    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.10);
-
-  }
-  &__logo{
-    img{
-      width: auto;
-      height: 35px;
-    }
-  }
-  &__phone{
-    color: #0264d5;
-    font-weight: 700;
-  }
-}
-
-.swiper-pagination{
-  position: relative;
 }

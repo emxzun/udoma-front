@@ -1,5 +1,5 @@
 import React from 'react';
-import Apartment from "@/components/apartment/Apartment";
+import ApartmentItem from "@/components/apartment-item/ApartmentItem";
 import apartmentExample from "@/images/examples/apartment.jpeg";
 
 const Index = () => {
@@ -16,7 +16,7 @@ const Index = () => {
   }
   return (
     <>
-      <Apartment item={DATA.apartments[0]}/>
+      <ApartmentItem item={DATA.apartments[0]}/>
     </>
   );
 };
