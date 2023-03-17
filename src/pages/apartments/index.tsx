@@ -11,7 +11,7 @@ const Index = () => {
 
   return (
     <>
-      <LayoutBlock>
+      <LayoutBlock title="Апартаменты">
         <div className="apartment-list__head">
           <div className="apartment-list__filter-price">
             цена:
@@ -35,7 +35,7 @@ const Index = () => {
         <div className="apartment-list__main">
           <div className="apartment-list__items">
             {DATA.apartments.map((item, index) =>
-                <ApartmentItem item={{...item, price: item.price + index}}/>
+                <ApartmentItem key={item.title} item={{...item, price: item.price + index}}/>
             )}
           </div>
         </div>
