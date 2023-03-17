@@ -2,6 +2,7 @@ import ApartmentItem from "@/components/apartment-item/ApartmentItem";
 import {DATA} from "@/common/data";
 import {Swiper, SwiperSlide} from "swiper/react";
 import {Pagination} from "swiper";
+import Link from "next/link";
 
 
 const PreviewApartments = () => {
@@ -35,7 +36,9 @@ const PreviewApartments = () => {
           </Swiper>
         </div>
         <div className="preview-apartments__food">
-          <button>Смотреть все объекты</button>
+          <Link href="/apartments">
+            <button>Смотреть все объекты</button>
+          </Link>
         </div>
     </>
 

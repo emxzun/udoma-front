@@ -20,15 +20,14 @@ const Index = () => {
               <input id="start-price" className="" type="text"/>
             </div>
             <div className="filter price">
-              <label htmlFor="start-price">до</label>
-              <input id="start-price" className="" type="text"/>
+              <label htmlFor="end-price">до</label>
+              <input id="end-price" className="" type="text"/>
             </div>
           </div>
           <div className="apartment-list__filter-price-item">
             район:
             <div className="filter district">
-              <label htmlFor="start-price"></label>
-              <div>asd</div>
+              <input id="district" className="" type="text"/>
             </div>
           </div>
         </div>
@@ -40,7 +39,9 @@ const Index = () => {
           </div>
         </div>
         <div className="apartment-list__food">
-          <ButtonLoad isLoad={loading} className="small">показать еще</ButtonLoad>
+          <div onClick={()=>setLoading(!loading)}>
+            <ButtonLoad isLoad={loading} className="small">показать еще</ButtonLoad>
+          </div>
         </div>
       </LayoutBlock>
     </>
