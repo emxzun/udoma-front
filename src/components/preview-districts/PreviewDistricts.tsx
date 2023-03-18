@@ -4,8 +4,6 @@ import {Pagination} from "swiper";
 import DistrictItem from "@/components/district-item/DistrictItem";
 import {DATA} from "@/common/data";
 import Link from "next/link";
-import 'swiper/css';
-import 'swiper/css/pagination';
 
 
 const PreviewDistricts = () => {
@@ -34,7 +32,7 @@ const PreviewDistricts = () => {
             }}
         >
           {DATA.districts.map(item =>
-              <SwiperSlide key={item.title}>
+              <SwiperSlide key={item.id}>
                 <DistrictItem item={item}/>
               </SwiperSlide>
           )}

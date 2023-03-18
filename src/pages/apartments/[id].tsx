@@ -3,7 +3,7 @@ import LayoutBlock from "@/layouts/layout-block/LayoutBlock";
 import {DATA} from "@/common/data";
 import Image from "next/image";
 import {A11y, Navigation, Pagination} from "swiper";
-import {Swiper, SwiperSlide, useSwiper} from "swiper/react";
+import {Swiper, SwiperSlide} from "swiper/react";
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';

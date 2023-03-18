@@ -41,7 +41,7 @@ const Intro = () => {
                     onSlideChange={() => console.log('slide change')}
                 >
                   {DATA.apartments.map(item =>
-                      <SwiperSlide key={item.title}>
+                      <SwiperSlide key={item.id}>
                         <ApartmentItem item={item}/>
                       </SwiperSlide>
                   )}

@@ -3,9 +3,9 @@ import PreviewApartments from "@/components/preview-apartments/PreviewApartments
 import PreviewDistricts from "@/components/preview-districts/PreviewDistricts";
 import Intro from "@/components/intro/Intro";
 import LayoutBlock from "@/layouts/layout-block/LayoutBlock";
-import Link from "next/link";
 import PreviewApartmentsFood from "@/components/preview-apartments-food/PreviewApartmentsFood";
-
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 export default function Home() {
   return (

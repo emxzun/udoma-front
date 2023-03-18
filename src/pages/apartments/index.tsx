@@ -34,7 +34,7 @@ const Index = () => {
               <div>hello</div>
               <div className={["dropdown", dropdownActive ? "active" : ""].join(" ")}>
                 {DATA.districts.map(item =>
-                  <div className="dropdown__item" key={item.title}>{item.title}</div>
+                  <div className="dropdown__item" key={item.id}>{item.title}</div>
                 )}
               </div>
             </div>
@@ -43,7 +43,7 @@ const Index = () => {
         <div className="apartment-list__main">
           <div className="apartment-list__items">
             {DATA.apartments.map((item, index) =>
-                <ApartmentItem key={item.title} item={{...item, price: item.price + index}}/>
+                <ApartmentItem key={item.id} item={{...item, price: item.price + index}}/>
             )}
           </div>
         </div>

@@ -4,8 +4,6 @@ import {DATA} from "@/common/data";
 import ButtonLoad from "@/components/button-load/ButtonLoad";
 import SearchField from "@/components/search-field/SearchField";
 import DistrictItem from "@/components/district-item/DistrictItem";
-import Link from "next/link";
-import slug from "slug";
 
 
 const Index = () => {
@@ -19,7 +17,7 @@ const Index = () => {
           <div className="district-list__main">
             <div className="district-list__items">
               {DATA.districts.map((item) =>
-                    <DistrictItem key={item.title} item={item}/>
+                    <DistrictItem key={item.id} item={item}/>
               )}
             </div>
           </div>
