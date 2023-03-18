@@ -9,6 +9,12 @@
   box-sizing: border-box;
 }
 
+body{
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
 #block{
   max-width: 1200px;
   padding: 40px 20px;
@@ -93,6 +99,11 @@
     font-weight: 700;
   }
 }
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
 button{
   padding: 15px 30px;
   border-radius: 60px;
@@ -211,6 +222,55 @@ button{
 }
 
 
+.apartment-detail{
+  &__title{
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    line-height: 2.2rem;
+
+  }
+  &__district{
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.116667px;
+    color: #007BFF;
+  }
+  &__description{
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+  &__img{
+    max-height: 300px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0 20px 20px 0;
+    border-radius: 20px;
+  }
+  &__img-item{
+    width: 100%;
+    max-height: 390px;
+    object-fit: contain;
+    padding: 20px 0 30px 0;
+    &__wrapper{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &__img-items{
+    background: #222222;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  .swiper-pagination-bullet{
+    background: white;
+  }
+}
+
 .district-item{
   margin-bottom: 30px;
   width: 100%;
@@ -230,6 +290,11 @@ button{
 
 
 .preview-districts{
+  &__head{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+  }
   &__items{
     margin-bottom: 20px;
   }
@@ -308,6 +373,12 @@ button{
     width: 100%;
   }
 
+  &__help-text{
+    margin-top: .5rem;
+    margin-left: 15px;
+    font-size: .7rem;
+  }
+
   input{
     width: 100%;
     outline: none;
@@ -381,6 +452,52 @@ button{
 }
 
 
+.district-list{
+  &__head{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    @media screen and (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;;
+    }
+  }
+  &__main{}
+  &__food{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__filter-price{
+    display: flex;
+    gap: 10px;
+    &-item{
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+  }
+  &__items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    @media screen and (max-width: 992px){
+      grid-template-columns: 1fr 1fr;
+      column-gap: 10px;
+    }
+    @media screen and (max-width: 768px){
+      grid-template-columns: 1fr;
+    }
+  }
+  &__search-field{
+    margin-bottom: 30px;
+  }
+}
+
 
 
 #input-default{
@@ -407,7 +524,7 @@ button{
     height: 0;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
     position: absolute;
     top: 100%;
     left: 0;
@@ -443,9 +560,6 @@ button{
     width: 100px;
   }
 }
-
-
-
 
 
 

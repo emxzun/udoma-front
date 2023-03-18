@@ -3,7 +3,6 @@ import LayoutBlock from "@/layouts/layout-block/LayoutBlock";
 import ApartmentItem from "@/components/apartment-item/ApartmentItem";
 import {DATA} from "@/common/data";
 import ButtonLoad from "@/components/button-load/ButtonLoad";
-import 'react-dropdown/style.css';
 import SearchField from "@/components/search-field/SearchField";
 
 const Index = () => {

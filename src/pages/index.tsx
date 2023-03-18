@@ -2,9 +2,9 @@ import Head from 'next/head'
 import PreviewApartments from "@/components/preview-apartments/PreviewApartments";
 import PreviewDistricts from "@/components/preview-districts/PreviewDistricts";
 import Intro from "@/components/intro/Intro";
-import 'swiper/css';
-import 'swiper/css/pagination';
 import LayoutBlock from "@/layouts/layout-block/LayoutBlock";
+import Link from "next/link";
+import PreviewApartmentsFood from "@/components/preview-apartments-food/PreviewApartmentsFood";
 
 
 export default function Home() {
@@ -20,6 +20,7 @@ export default function Home() {
         <Intro/>
         <LayoutBlock title="Наши лучшие инвестиционные предложения" subtitle="Мы отобрали, проверили и рассчитали прибыльность каждого объекта">
           <PreviewApartments/>
+          <PreviewApartmentsFood/>
         </LayoutBlock>
         <LayoutBlock title="Новости и аналитика рынка недвижимости" subtitle="Последние новости и аналитический отчеты, а также полезные советы наших экспетров">
           <PreviewDistricts/>

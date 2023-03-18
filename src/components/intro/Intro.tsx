@@ -8,7 +8,7 @@ import SearchField from "@/components/search-field/SearchField";
 
 
 const Intro = () => {
-  const [activeCategory, setActiveCategory] = React.useState<string>();
+  const [activeCategory, setActiveCategory] = React.useState<string>("Все");
 
   return (
       <div className="intro-wrapper">
