@@ -15,7 +15,8 @@ const ApartamentPage = () => {
       <>
         <LayoutBlock>
           <div className="apartment-detail">
-            <div className="apartment-detail__title">{DATA.apartment.title}</div>
+              <div className="apartment-detail__title">{DATA.apartment.title}</div>
+              <div className="apartment-detail__price">20{DATA.apartment.price} сом</div>
             <div className="apartment-detail__district">{DATA.apartment.district}</div>
             <Image className="apartment-detail__img" src={DATA.apartment.img} alt={DATA.apartment.title}/>
             <div className="apartment-detail__description">{DATA.apartment.desc}</div>
