@@ -33,12 +33,11 @@ const ApartamentPage = () => {
               onSlideChange={() => console.log('slide change')}
           >
             {DATA.apartments.map(item =>
-                <SwiperSlide style={{width: "100%"}} key={item.title}>
+                <SwiperSlide key={item.title}>
                     <Image className="apartment-detail__img-item" src={DATA.apartment.img} alt={DATA.apartment.title}/>
                 </SwiperSlide>
             )}
           </Swiper>
-
         </LayoutBlock>
 
       </>
