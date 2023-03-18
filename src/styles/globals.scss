@@ -1,4 +1,4 @@
-@import "@/fonts/stylesheet.css";
+@import "@/fonts/fonts.css";
 
 :root {
   font-family: 'TT Norms';
@@ -287,34 +287,35 @@ button{
       color: white;
     }
   }
-  &__search-field{
-    width: 70%;
-    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.10);
-    padding: 5px 20px;
-    padding-right: 5px;
-    border-radius: 50px;
-    display: grid;
-    grid-template-columns: 1fr auto;
+}
 
+.search-field{
+  width: 70%;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.10);
+  padding: 5px 20px;
+  padding-right: 5px;
+  border-radius: 50px;
+  display: grid;
+  grid-template-columns: 1fr auto;
 
-    @media screen and (max-width: 992px) {
-      width: 75%;
-    }
-    @media screen and (max-width: 768px) {
-      width: 85%;
-    }
-    @media screen and (max-width: 540px) {
-      width: 100%;
-    }
-    input{
-      width: 100%;
-      outline: none;
-      font-size: 18px;
-      border: none;
-    }
-    button{
-      padding: 10px 40px;
-    }
+  @media screen and (max-width: 992px) {
+    width: 75%;
+  }
+  @media screen and (max-width: 768px) {
+    width: 85%;
+  }
+  @media screen and (max-width: 540px) {
+    width: 100%;
+  }
+
+  input{
+    width: 100%;
+    outline: none;
+    font-size: 18px;
+    border: none;
+  }
+  button{
+    padding: 10px 40px;
   }
 }
 
@@ -374,6 +375,9 @@ button{
       grid-template-columns: 1fr;
     }
   }
+  &__search-field{
+    margin-bottom: 30px;
+  }
 }
 
 
@@ -388,6 +392,7 @@ button{
 .filter{
   font-size: 12px;
   &.district{
+    position: relative;
     width: 200px;
   }
   display: flex;
@@ -395,6 +400,35 @@ button{
   border-radius: 10px;
   border: 1px solid #007BFF;
   padding: 5px 10px;
+
+  .dropdown{
+    width: 100%;
+    overflow-y: scroll;
+    height: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    background: #FFFFFF;
+    border-radius: 10px;
+    transition: .2s ease-in-out;
+
+    &.active{
+      height: max-content;
+      max-height: 100px;
+      padding: 5px 10px;
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+      border: 1px solid #007BFF;
+    }
+    &__item:hover{
+        color: #007BFF;
+    }
+  }
+
   label{
     color: #767676;
     font-size: .8em;
@@ -409,3 +443,27 @@ button{
     width: 100px;
   }
 }
+
+
+
+
+
+
+
+
+
+//
+//
+//
+//::-webkit-scrollbar-track {
+//  background-color: green;
+//  border-radius: 10px;
+//  padding: 10px;
+//}
+//::-webkit-scrollbar-thumb {
+//  border-radius: 5px;
+//  background-color: #ccc;
+//}
+//::-webkit-scrollbar {
+//  width: 6px;
+//}

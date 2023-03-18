@@ -3,15 +3,19 @@ import LayoutBlock from "@/layouts/layout-block/LayoutBlock";
 import ApartmentItem from "@/components/apartment-item/ApartmentItem";
 import {DATA} from "@/common/data";
 import ButtonLoad from "@/components/button-load/ButtonLoad";
-
+import 'react-dropdown/style.css';
+import SearchField from "@/components/search-field/SearchField";
 
 const Index = () => {
   const [loading, setLoading] = React.useState<boolean>(false);
-
+  const [dropdownActive, setDropdownActive] = React.useState<boolean>(false);
 
   return (
     <>
       <LayoutBlock title="Апартаменты">
+        <div className="apartment-list__search-field">
+          <SearchField/>
+        </div>
         <div className="apartment-list__head">
           <div className="apartment-list__filter-price">
             цена:
@@ -26,8 +30,14 @@ const Index = () => {
           </div>
           <div className="apartment-list__filter-price-item">
             район:
-            <div className="filter district">
-              <input id="district" className="" type="text"/>
+
+            <div onClick={()=>setDropdownActive(!dropdownActive)} className="filter district">
+              <div>hello</div>
+              <div className={["dropdown", dropdownActive ? "active" : ""].join(" ")}>
+                {DATA.districts.map(item =>
+                  <div className="dropdown__item" key={item.title}>{item.title}</div>
+                )}
+              </div>
             </div>
           </div>
         </div>

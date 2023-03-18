@@ -4,6 +4,7 @@ import {DATA} from "@/common/data";
 
 import {Swiper, SwiperSlide} from "swiper/react";
 import {Pagination} from "swiper";
+import SearchField from "@/components/search-field/SearchField";
 
 
 const Intro = () => {
@@ -28,10 +29,7 @@ const Intro = () => {
                     </div>
                 )}
               </div>
-              <div className="intro__search-field">
-                <input type="text"/>
-                <button>Поиск</button>
-              </div>
+              <SearchField/>
             </div>
             <div className="last-apartment">
                 <Swiper

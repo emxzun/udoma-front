@@ -74,15 +74,15 @@ export const DATA = {
   ],
   districts: [
     {
-      title: " ЖК «Atlantis Deluxe»",
+      title: "Аламедин",
       img: apartmentExample.src,
     },
     {
-      title: " ЖК «Atlantis Deluxe»",
+      title: "Микрорайон 7",
       img: apartmentExample.src,
     },
     {
-      title: " ЖК «Atlantis Deluxe»",
+      title: "Центр",
       img: apartmentExample.src,
     },
     {
