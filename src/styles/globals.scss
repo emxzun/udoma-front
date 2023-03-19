@@ -227,12 +227,14 @@ button{
   }
   &__head{
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
+    align-items: end;
+    gap: 10px;
+    margin-bottom: 15px;
+    margin-top: 25px;
   }
   &__price{
     font-weight: 500;
-    margin-top: 30px;
-    margin-bottom: 5px;
     font-size: 1.4rem;
     line-height: 1.5rem;
     letter-spacing: 0.116667px;
@@ -242,7 +244,6 @@ button{
     font-weight: 500;
     font-size: 1.8rem;
     line-height: 1.75rem;
-    margin-bottom: 10px;
     letter-spacing: 0.116667px;
     color: #232323;
   }
@@ -260,7 +261,6 @@ button{
   }
   &__img-item{
     width: 100%;
-    background: #222222;
     border-radius: 20px;
     max-height: 390px;
     object-fit: contain;
